@@ -123,4 +123,5 @@ resource "google_workflows_workflow" "workflow" {
   project         = var.project_id
   labels          = var.workflow_labels
   source_contents = var.workflow_source
+  deletion_protection = false
 }
